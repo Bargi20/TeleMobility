@@ -1,0 +1,50 @@
+.containerTextArea{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 20px;
+    
+    border-radius: 8px;
+    background-color:white;
+}
+.editor{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+    
+}
+.textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    margin-top: 15px;
+    font-size:medium;
+}
+.containerBottoni{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    gap: 150px;
+    
+}
+.buttonSalva{
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    height: 50px;
+    width: 100px;
+
+}
+.buttonSalva:hover {
+    background-color: #0056b3;
+}

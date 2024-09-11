@@ -1,0 +1,350 @@
+.bottoneAdmin{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #1A76D1;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgb(157, 157, 157);
+    display: block;
+    margin-bottom: 10px; 
+}
+.EliminaClinico{
+    width: 70px;
+    height: 35px;
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rettangoloClinAdmin{
+    background-color: #ececec;
+    display: flex;
+    width: 50%;
+    border-radius: 0.6em;
+    transition: transform 0.3s ease;
+    margin-top: 2em;
+    box-shadow:0px 0px 10px rgb(157, 157, 157);
+    transition: transform 0.3s ease;
+    margin-bottom: 5em;
+
+}
+.listaPazienti{
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.listaPazienti h2 {
+    margin-top: 0;
+}
+
+.listaPazienti ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listaPazienti li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+}
+.listaPazientiBottone{
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.rettangoloClinAdmin:hover{
+    transform: translateY(-3px);
+}
+
+
+.bottoneAdminDisturbi{
+    width:90px;
+    height: 35px;
+    border-radius: 0.4em;
+    color:white;
+    cursor: pointer;
+    border: none;
+}
+
+.bottoneAdminDisturbi:hover{
+    border: none;
+    box-shadow: 0px 0px 4px rgb(0, 0, 0);
+    transform: translateY(-2px); 
+
+}
+
+.containerBottoniDisturbi{
+    width: 270px;
+    display: flex; 
+    justify-content:space-between; /* Distribuisce gli elementi con spazio tra di loro */
+
+}
+
+
+.containerDisturbiAdmin{
+    align-items: center;
+    padding-left:20px;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-top:20px;
+    background-color: #1A76D1; 
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
+
+    transition: transform 0.3s ease;
+    border-radius:0.6em;
+    display:flex
+  }
+
+.containerDisturbiAdmin:hover{
+    transform: translateY(-2px); 
+    background-color: #1c7edf; 
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+
+}
+
+.divDisturbo{
+    display:block;
+    margin-right: 30%;
+    width:100%;
+    overflow-wrap: break-word;
+    padding-top:10px;
+    padding-bottom:10px;
+    justify-content:center;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.h4Disturbo{
+    color:white;
+    display: inline-block;
+    white-space: normal;
+    overflow-wrap: break-word
+}
+/*Messaggio visualizzato quando modifico/elimino/aggiungo correttamente un disturbo*/
+.alert-success {
+    background-color: #d4edda; /* Verde chiaro */
+    border-color: #c3e6cb; /* Verde leggermente più scuro per il bordo */
+    color: #155724; /* Verde scuro per il testo */
+    padding: 15px; /* Padding per il contenuto dell'alert */
+    margin-bottom: 20px; /* Margine inferiore */
+    border: 1px solid transparent; /* Bordo solido */
+    border-radius: 0.25rem; /* Bordo arrotondato */
+    font-family: Arial, sans-serif; /* Font dell'alert */
+    display: flex;
+    align-items: center;
+}
+
+.alert-success .alert-icon {
+    margin-right: 10px; /* Margine tra l'icona e il testo */
+}
+
+.alert-success .alert-message {
+    flex: 1;
+}
+/*Messaggio visualizzato quando modifico male un disturbo (es Riscrivo lo stesso)
+O quando aggiungo uno che esiste già*/
+
+.alert-error {
+    background-color: #f8d7da; /* Rosso chiaro */
+    border-color: #f5c6cb; /* Rosso leggermente più scuro per il bordo */
+    color: #721c24; /* Rosso scuro per il testo */
+    padding: 15px; /* Padding per il contenuto dell'alert */
+    margin-bottom: 20px; /* Margine inferiore */
+    border: 1px solid transparent; /* Bordo solido */
+    border-radius: 0.25rem; /* Bordo arrotondato */
+    font-family: Arial, sans-serif; /* Font dell'alert */
+    display: flex;
+    align-items: center;
+}
+
+.alert-error .alert-icon {
+    margin-right: 10px; /* Margine tra l'icona e il testo */
+}
+
+.alert-error .alert-message {
+    flex: 1;
+}
+
+.circle {
+    justify-content: center;
+    height: 150px;
+    background-color: #f0efef;
+    border-radius: 0.6em;
+    box-shadow: 0px 0px 10px rgb(157, 157, 157);
+    color: #000;
+    font-size: 24px;
+    padding:15px;
+    margin-bottom: 30px;
+    margin-top:10px;
+    max-width: 400px;
+    margin-left: 40px;
+}
+
+.label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.containerDeiCerchi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.disturbiContainer{
+    width:1000px;
+}
+
+
+.patient-list {
+    display: none;
+    margin-top: 10px;
+}
+
+.disturbi{
+    color:white;
+}
+
+
+.divGrafico{
+    padding:5px;
+    margin-left:40px;
+    margin-right:40px;
+    margin-top:30px;
+    width:95%;    
+    border-radius: 0.6em;
+
+  
+}
+
+.nomePaziente{
+    
+    margin-left: 55px;
+    margin-top: 40px;
+    width: 300px;
+    height: 70px;
+    transition: background-color 0.3s ease;
+
+    color:white;
+    background-color: #1A76D1; 
+    box-shadow: 0px 0px 10px rgb(157, 157, 157);
+
+    text-align: center;
+    font-size: 26;
+    padding:20px;
+    transition: transform 0.3s ease;
+    user-select: none;
+
+}
+
+.nomePaziente:hover{
+    transform: translateY(-3px);
+}
+
+.nomePaziente:active{
+    transform: scale(0.98);
+}
+
+.terapiaDopoIlClick{
+    width: 300px;
+    height: 100px;
+    background-color: #f0efef;
+    box-shadow: 0px 0px 10px rgb(157, 157, 157);
+    font-size: 17;
+    padding:3px;
+    margin-left: 55px;
+
+    user-select: none;
+    
+
+}
+
+.barraRicerca{
+    user-select: none;
+    box-shadow: 0px 0px 10px rgb(157, 157, 157);
+
+    color: #1A76D1 !important;
+    border: 2px solid #1A76D1 !important; /* Colore e spessore del bordo */
+    text-align: center;
+    margin-top:20px;
+    width: 400px;
+    height: 50px;
+    font-size: 20;
+}   
+form#searchForm input.barraRicerca:focus,
+form#searchForm input.barraRicerca:focus-visible,
+form#searchForm input.barraRicerca:active{
+    user-select: none;
+    color: #1A76D1 !important;
+    border: 2px solid #1A76D1 !important; /* Colore e spessore del bordo */
+}
+
+.barraRicerca:active{
+    user-select: none;
+
+    color: #1A76D1 !important;
+    border: 2px solid #1A76D1 !important; /* Colore e spessore del bordo */
+    outline: none !important; /* Rimuove l'outline di default */
+
+}
+
+/*Serve se si vuole mantenere il bordo blu, si può anche togliere*/
+form#searchForm input.barraRicerca:focus-visible{
+    user-select: none;
+
+    color: #1A76D1 !important;
+    border: 2px solid #1A76D1 !important; /* Colore e spessore del bordo */
+    outline: none !important; /* Rimuove l'outline di default */
+
+}
+
+.nomePazienteNonTrovato{
+    
+    margin-left: 55px;
+    margin-top: 40px;
+    width: 300px;
+    height: 70px;
+    transition: background-color 0.3s ease;
+
+    background-color: #f8d7da; /* Rosso chiaro */
+    border-color: #f5c6cb; /* Rosso leggermente più scuro per il bordo */
+    color: #721c24; /* Rosso scuro per il testo */
+    
+    border: 1px solid transparent; /* Bordo solido */
+    border-radius: 0.25rem; /* Bordo arrotondato */
+    font-family: Arial, sans-serif; /* Font dell'alert */
+    text-align: center;
+    font-size: 23;
+    padding:20px;
+    transition: transform 0.3s ease;
+    user-select: none;
+
+}
+
+#terapiaDetails {
+    display: none;
+}

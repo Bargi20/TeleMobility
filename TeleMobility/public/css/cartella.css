@@ -1,0 +1,106 @@
+
+.titoloCartella{
+    background-color: #1A76D1;
+    width: 75%;
+    margin-top: 1em;
+    box-shadow: 0px 0px 10px rgb(157, 157, 157);
+     height: 40px;
+    font-size: x-large; 
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+}
+
+.titoloCartella h3{
+    color: white;
+}
+
+.contenutoCartella {
+    background-color: #ececec;
+    display: block; /* Modificato da flex a block */
+    width: 75%;
+    
+    box-shadow: 0px 0px 10px rgb(157, 157, 157);
+  
+    color: black; 
+   /*centro un po' il testo sennò è troppo attaccato ai bordi*/
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+}
+
+
+
+
+.benvenutoCartella{
+    width: 400px;
+    height: 90px;
+ 
+    font-family: Arial, Helvetica, sans-serif;
+     clear: both;
+}
+
+/*
+.bottoneCartella{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    background-color:#1A76D1;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    width:160px;
+    height: 80px;
+}
+*/
+
+.bottoneCartella1{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background-color:#1A76D1;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    /*text-decoration: none;*/
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow:0px 0px 2px rgb(157, 157, 157);
+}
+
+.bottoneCartella:hover {
+    transform: translateY(-3px);}
+
+.bottoneCartella:active {
+    /*trasla verso il basso e il bottone e lo rimpicciolisce di 0.95*/
+    transform: translateY(2px) scale(0.95); /* Simula un effetto di pressione */
+}
+
+.bottoneCartella:focus {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Aggiunge un'ombra */
+    outline: none;
+}
+
+.linea-verticale {
+    border-left: 1px solid black; /* Stile della linea verticale */
+    margin: 0 10px; /* Spazio tra la linea verticale e le colonne */
+    
+}
+
+.farmaciSelect{
+    color:black;
+    border:2px solid black;
+}
+
+.farmaciSelect:hover{
+    color:black;
+    border:2px solid black;
+}
+
+.farmaciSelect:focus{
+    color:black;
+    border:2px solid black;
+}
+

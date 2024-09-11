@@ -1,0 +1,136 @@
+
+.rettangoloFaq{
+    background-color: #1A76D1; 
+    display: flex; 
+    transition: transform 0.3s ease;
+    color: #ffffff;
+}
+.Risposta {
+    background-color: #f7f7f7; /* Colore simile al bianco */
+    padding-top: 10px;
+    font-size: 110%;
+    padding-left: 30px;
+    display: none;
+}
+
+.containerFaq {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    transition: transform 0.3s ease; /* Aggiunge una transizione fluida al cambiamento di trasformazione */
+}
+
+.containerFaq:hover {
+    transform: translateY(-2px); /* Sposta l'elemento verso l'alto di 5px quando il mouse è sopra di esso */
+}
+.styledomande
+{
+    color: white; 
+    font-size:x-large; 
+    padding-left: 1%; 
+    padding-top: 0.8%; 
+    padding-bottom: 1.5%;
+    padding-right:1% ;
+}
+
+.containerFaqCentrato{
+    display:flex;
+    margin: auto auto;
+}
+
+.containerFaqSingoleNew {
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease; /* Aggiunge una transizione fluida al cambiamento di trasformazione */
+}
+
+.domandaFaqAdmin{
+    width:100%;
+
+}
+
+.RispostaFaqAdmin {
+    background-color: #bdbdbd63; /* Colore simile al bianco */
+    padding-top: 10px;
+    font-size: 150%;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: none;
+    padding-bottom: 30px;
+
+
+}
+
+.rettangoloFaqNew{
+    background-color: #1A76D1; 
+    display: flex; 
+    transition: transform 0.3s ease;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.rettangoloFaqNew:hover{
+    transform: translateY(-2px); 
+}
+
+.containerBottoniFaqs{
+    margin-top:30px;
+    margin-left:35%;
+    margin-right:35%; 
+    display: flex; 
+    align-items: center;
+
+    justify-content:space-between; /* Distribuisce gli elementi con spazio tra di loro */
+
+}
+
+.bottoneAdminFaq{
+    width:140px;
+    height: 50px;
+    border-radius: 0.2em;
+    color:white;
+}
+
+.bottoneAdminFaq:hover{
+    width:140px;
+    height: 50px;
+    transform: translateY(-2px); 
+
+}
+
+.formDomandaFaq{
+    padding-left: 10px;
+    padding-right: 10px;
+    width:100%;
+    height: 80px;
+    font-size:18px; 
+    color:black;
+    border:2px solid black;
+
+
+}
+
+.formRispostaFaq{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    width:100%;
+    height: 300px;
+    font-size:18px; 
+    color:black;
+    box-sizing: border-box; /* Assicura che padding e bordi siano inclusi nella larghezza totale */
+
+    border:2px solid black;
+}
+
+.labelFaqAdmin{
+    color:black;
+    font-size:x-large; 
+
+}

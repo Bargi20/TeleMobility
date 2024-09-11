@@ -1,0 +1,134 @@
+
+
+.containerBottoniDottore{
+    display: flex;
+    justify-content:space-between; /* Distribuisce gli elementi con spazio tra di loro */
+    align-items: center;
+    width: 90%;
+    padding-left:12%;
+    padding-right:12%;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.bottoniDottore{
+    font-size: 16px;
+    height: 60px;
+    color:rgb(37, 36, 36);
+    background-color:rgb(228, 226, 235); 
+    width: 160px;
+    border-radius: 0.3em;
+    box-shadow:0px 0px 10px rgb(157, 157, 157);
+
+    border:none;
+}
+
+.bottoniDottore:hover{
+    box-shadow:0px 0px 7px rgb(7, 128, 215);
+    color:  #1A76D1; /* Cambia il colore del testo */
+    transform: translateY(-2px);
+}
+
+/*quando clicco o tengo premuto*/
+.bottoniDottore:active{
+    box-shadow:0px 0px 7px rgb(7, 128, 215);
+    color:#1A76D1; /* Cambia il colore del testo */
+    transform: translateY(2px) scale(0.95); /* Simula un effetto di pressione */
+
+}
+
+/*quando l'elemento riceve il focus*/
+.bottoniDottore:focus {
+    outline: none; /* Rimuove il contorno predefinito */ 
+    box-shadow:0px 0px 10px rgb(7, 128, 215);
+}
+
+
+
+.containerGestioneAccount{
+    width:50%;
+    justify-content:space-between; /* Distribuisce gli elementi con spazio tra di loro */
+    align-items: center;
+    margin-left: 150px;
+}
+
+.containerFormGestioneAccount{
+    align-items: center;
+    display:flex;
+    flex-direction: column; /* Dispone i div in colonna */
+    box-shadow:0px 0px 10px rgb(157, 157, 157);
+    background-color: #ececec;
+    padding-bottom:8%;
+    padding-top:8%;
+    border-radius: 0.6em;
+    
+}
+
+.buttonGestioneAccount{
+    display: block;
+    width:180px; 
+    height:30px;
+    box-shadow:0px 0px 10px rgb(157, 157, 157);
+
+}
+
+/*quando ci passo su con il mouse*/
+.buttonGestioneAccount:hover{
+    box-shadow:0px 0px 7px rgb(7, 128, 215);
+    color:  #1A76D1; /* Cambia il colore del testo */
+    transform: translateY(-2px);
+}
+
+/*quando clicco o tengo premuto*/
+.buttonGestioneAccount:active{
+    box-shadow:0px 0px 7px rgb(7, 128, 215);
+    color:#1A76D1; /* Cambia il colore del testo */
+    transform: translateY(2px) scale(0.95); /* Simula un effetto di pressione */
+
+}
+
+/*quando l'elemento riceve il focus*/
+.buttonGestioneAccount:focus {
+    outline: none; /* Rimuove il contorno predefinito */ 
+    box-shadow:0px 0px 10px rgb(7, 128, 215);
+}
+
+.inputForm{
+    width: 100%;
+    outline:none;
+    border-radius: 0.6em;
+    border-color: black;
+}
+
+.containerCentrato{
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Dispone i div in colonna */
+
+}
+
+
+.inputForm{
+    width: 100%;
+    outline:none;
+    border-radius: 0.6em;
+    border-color: black;
+}
+
+.containerCentrato{
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Dispone i div in colonna */
+
+}
+
+.submitDisturbo{
+    color:white;
+    width: 160px;
+    height: 50px;
+    background-color: #0571e4;
+}

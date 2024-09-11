@@ -1,0 +1,45 @@
+.containerEvento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .event-infoEvento{
+    flex-grow: 1;
+  }
+  
+  .BottoneElEvento{
+    background-color: #fa593c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-buttonEvento:hover{
+    background-color: #d32f2f;
+  }
+
+
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container button {
+    height: fit-content;
+} 

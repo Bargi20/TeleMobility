@@ -1,0 +1,131 @@
+
+
+    .login-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .login-container::before {
+        content: '';
+        position: absolute;
+        top: -100px;
+        left: -100px;
+        width: 200px;
+        height: 200px;
+        background-color: #007bff;
+        border-radius: 50%;
+        z-index: -1;
+        animation: spin 6s linear infinite;
+    }
+
+    .login-container::after {
+        content: '';
+        position: absolute;
+        bottom: -100px;
+        right: -100px;
+        width: 200px;
+        height: 200px;
+        background-color: #007bff;
+        border-radius: 50%;
+        z-index: -1;
+        animation: spin 6s linear infinite reverse;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .login-header {
+        margin-bottom: 30px;
+        color: #1A76D1;
+    }
+
+    .login-header h3 {
+        margin: 0;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .login-header p {
+        margin: 5px 0;
+        color: #666;
+    }
+
+    .wrap-input {
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .wrap-input input {
+        width: 100%;
+        padding: 10px 40px 10px 10px;
+        border: 1px solid #ccc;
+        border-radius: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s;
+    }
+
+    .wrap-input input:focus {
+        border-color: #1A76D1;
+        outline: none;
+    }
+
+    .wrap-input .icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 1.2em;
+        color: #999;
+    }
+
+    .errors {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: red;
+        font-size: 0.9em;
+        text-align: left;
+    }
+
+    .container-form-btn {
+        margin-top: 20px;
+    }
+
+    .form-btn1 {
+        background-color: #1A76D1;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .form-btn1:hover {
+        background-color: #1A76D1;
+        transform: scale(1.05);
+    }
+
+    .register-link {
+        margin-top: 20px;
+        color: #666;
+    }
+
+    .register-link a {
+        color: #1A76D1;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .register-link a:hover {
+        text-decoration: underline;
+    }

@@ -1,0 +1,15 @@
+.list-group-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.list-group-item h5 {
+    color: #333;
+}
+
+.list-group-item p {
+    color: #555;
+}
+

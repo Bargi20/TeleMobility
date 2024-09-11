@@ -1,0 +1,64 @@
+.containerPaginator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    max-width: 1200px; 
+}
+
+.divPaginator {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+}
+
+.bottoniPaginator, .bottoniPaginatorNoLink {
+    font-size: 16px;
+    height: 40px;
+    margin-top: 40px;
+    color: rgb(37, 36, 36);
+    background-color: rgb(228, 226, 235); 
+    width: 140px;
+    border-radius: 0.3em;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bottoniPaginatorNoLink {
+    cursor: default;
+}
+
+.bottoniPaginator:hover {
+    background-color: #1A76D1;
+    color: white; 
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bottoniPaginator:active {
+    transform: translateY(2px) scale(0.95);
+}
+
+.bottoniPaginator:focus, .bottoniPaginatorNoLink:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(7, 128, 215, 0.5);
+}
+
+.bottoniPaginator::after, .bottoniPaginatorNoLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #1A76D1;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.bottoniPaginator:hover::after, .bottoniPaginator:focus::after {
+    width: 100%;
+}
